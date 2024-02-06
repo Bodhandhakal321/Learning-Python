@@ -95,3 +95,99 @@ False
 >>> x<y and y<z
 True
 >>>
+>>> import math
+>>> math.floor(4.9) 
+4
+>>> math.trunc(2.9)
+2
+>>> math.trunc(2.9)
+2
+>>> math.trunc(-2.9) 
+-2
+>>> 2+1j
+(2+1j)
+>>> (2+1j)*3
+(6+3j)
+>>>
+<!-- >>> 0o20 octal --> 
+
+16
+<!-- >>> int('64', 8)
+52
+>>> to octal easy -->
+>>> 0x16  
+22
+>>> 0xFF
+255
+>>> 0b1000
+8
+>>>
+<!-- bitwise
+>>> x=1
+>>> x << 2
+4
+>>> --> 
+<!-- learning for decimal
+>>> import random  
+>>> l1 = ['masala tea', 'milktea']
+>>> random.choice(l1)\
+... random.choice(l1) 
+  File "<stdin>", line 2
+    random.choice(l1)
+    ^^^^^^
+SyntaxError: invalid syntax
+>>> random.choice(l1)
+'masala tea'
+>>>
+>>> random.shuffle(l1)
+>>> l1
+['milktea', 'masala tea']
+>>> l1
+['milktea', 'masala tea']
+>>>
+>>> l1
+['milktea', 'masala tea']
+>>> 0.1 + 0.1 + 0.4
+0.6000000000000001
+>>> 0.1+0.1 + 0.1
+0.30000000000000004
+>>> 0.1+0.1 + 0.1 - 0.3
+5.551115123125783e-17
+>>> (0.1+0.1 + 0.1) - 0.3 
+5.551115123125783e-17
+>>> from decimal import decimal
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ImportError: cannot import name 'decimal' from 'decimal' (C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2032.0_x64__qbz5n2kfra8p0\Lib\decimal.py)
+>>> from decimal import Decimal
+>>> Decimal('0.1') + Decimal ('0.1') + Decimal('0.1')
+Decimal('0.3')
+>>> Decimal('0.1') + Decimal ('0.1') + Decimal('0.1') -Decimal ('0.3')
+Decimal('0.0')
+>>> -->
+<!-- sets opearions
+>>> setone = {1,2,3,4} 
+>>> setone &{1,3}
+{1, 3}
+>>> setone|{1,3}  
+{1, 2, 3, 4}
+>>> setone - {1,2,3,4}
+set()
+>>> type({})
+<class 'dict'>
+>>> --> 
+<!-- python treats true by 1 false by 0  
+>>> type(True)
+<class 'bool'>
+>>> True ==1
+True
+>>> False ==0
+True
+>>> True is 1
+<stdin>:1: SyntaxWarning: "is" with a literal. Did you mean "=="?
+False
+>>> True 
+True
+>>> True +4
+5
+>>>-->
