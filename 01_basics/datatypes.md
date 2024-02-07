@@ -246,3 +246,18 @@ MASALA CHAI
 -1 negone for not found
 >>>
  -->
+ <!-- findind count by using count 
+ >>> chai = "masala chai chai chai"
+>>> print(chai.count("chai")) 
+3
+ -->
+ <!-- placeholder
+ 
+ >>> chai_type = "Masala chai"
+>>> quantity =2
+>>> order = "I ordered {} cups of {} chai"
+>>> order
+'I ordered {} cups of {} chai'
+>>> print(order.format(quantity, chai_type))
+I ordered 2 cups of Masala chai chai
+>>> -->
