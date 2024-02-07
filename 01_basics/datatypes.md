@@ -191,3 +191,58 @@ True
 >>> True +4
 5
 >>>-->
+<!-- string slicing
+
+>>> chai = "masala chai"
+>>> first_chai = chai[0]
+>>> print(first_chai)
+m
+>>> chai 
+'masala chai'
+>>> slice_chai = chai[0:6]
+>>> print(slice_chai)
+masala
+>>> -->
+<!-- stripping 
+>>> chai = "masala chai"
+>>> first_chai = chai[0]
+>>> print(first_chai)
+m
+>>> chai 
+'masala chai'
+>>> slice_chai = chai[0:6]
+>>> print(slice_chai)
+masala
+>>> num_list = "0123456789"
+>>> num_list[:] 
+'0123456789'
+>>> num_list[3:] 
+'3456789'
+>>> num_list[:7]  
+'0123456'
+>>> num_list[0:7:3] 
+'036'
+>>> chai           
+'masala chai'
+>>> print(chai.lower()) 
+masala chai
+>>> print(chai.upper()) 
+MASALA CHAI
+>>> chai
+'masala chai'
+>>> chai = "   MASALA CHAI  "
+>>> chai
+'   MASALA CHAI  '
+>>> print(chai.strip()) 
+MASALA CHAI
+
+>>>
+>>> chai  = "lemon , ginger, masala, mint" 
+>>> print(chai.split("," )) 
+>>> chai = "masala chai" 
+>>> print(chai.find("chai"))
+7
+>>> print(chai.find("Chai")) 
+-1 negone for not found
+>>>
+ -->
