@@ -261,3 +261,69 @@ MASALA CHAI
 >>> print(order.format(quantity, chai_type))
 I ordered 2 cups of Masala chai chai
 >>> -->
+<!-- string to list using join operation  
+>>> chai_variety 
+['Lemon', 'MAsala', 'Ginger']
+>>> print("".join(chai_variety)) 
+LemonMAsalaGinger
+>>> print(" ".join(chai_variety)) 
+Lemon MAsala Ginger
+>>> print(",  ".join(chai_variety)) 
+Lemon,  MAsala,  Ginger
+>>> print("-  ".join(chai_variety)) 
+Lemon-  MAsala-  Ginger
+>>>  
+->
+<!-- length and print each every letter
+>>> chai = "masla chai"
+>>> print(len(chai)) 
+10
+>>> chai
+'masla chai'
+>>> for letter in chai:
+...     print(letter)
+...
+m
+a
+s
+l
+a
+
+c
+h
+a
+i
+>>>
+ --> 
+ <!-- use r for raw 
+ SyntaxError: invalid syntax
+>>> chai="He said,  \"Masal Chai is awesome\" " 
+>>> chai="He said,  \"Masal Chai is awesome\" "
+>>> chai
+'He said,  "Masal Chai is awesome" '
+>>> chai = "Masala \nChai"
+>>> print(chai)
+Masala
+Chai
+>>> chai = r"Masala\nChai"
+>>> print(chai)
+Masala\nChai
+>>> chai = r"c:\\user\\wdp\\"
+>>> print(chai)
+c:\\user\\wdp\\
+>>> chai = r"c:\user\wdp\"    
+  File "<stdin>", line 1
+    chai = r"c:\user\wdp\"
+           ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> chai
+'c:\\\\user\\\\wdp\\\\'
+>>> chai= r"c:\user\pwd"
+>>> print(chai)
+c:\user\pwd
+>>>
+>>> chai = "masla chai"
+>>> print("masl" in chai)
+True
+>>>
+ -->
