@@ -423,4 +423,17 @@ i have Oolong tea
 >>> tea_varieties
 ['black', 'green', 'Masala', 'White']
 >>>
+ --> 
+ <!-- list comprehension  and learning range [can implement loop on list]
+ >>> range(10)                               
+range(0, 10)
+>>> print(range(10))
+range(0, 10)
+>>> y = range(10)
+>>> y
+range(0, 10)
+>>> squared_nums = [x**2 for x in range(10)]
+>>> squared_nums
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+>>>
  -->
