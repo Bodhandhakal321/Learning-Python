@@ -327,3 +327,8 @@ c:\user\pwd
 True
 >>>
  -->
+
+ <!-- learing list in pytho
+ 
+ 
+  -->
