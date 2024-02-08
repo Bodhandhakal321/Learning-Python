@@ -330,5 +330,54 @@ True
 
  <!-- learing list in pytho
  
- 
+ >>> tea_varieties = ["black", "green", "oolong","White"]
+>>> print(tea_varieties)
+['black', 'green', 'oolong', 'White']
+>>> print(tea_varieties.[0]) 
+  File "<stdin>", line 1
+    print(tea_varieties.[0])
+                        ^
+SyntaxError: invalid syntax
+>>> print(tea_varieties[0])  
+black
+>>> 
+>>> print(tea_varieties)
+['black', 'green', 'oolong', 'Herbal']
+>>> tea_varieties[1:2] = "Lemon" 
+>>> tea_varieties
+['black', 'L', 'e', 'm', 'o', 'n', 'oolong', 'Herbal']
+>>> tea_varieties
+['black', 'L', 'e', 'm', 'o', 'n', 'oolong', 'Herbal']
+>>> tea_varieties = ["black", "green", "oolong","White"]
+>>> tea_varieties[1:2]          
+['green']
+>>> tea_varieties[1:2] = ["Lemon"]
+>>> tea_varieties
+['black', 'Lemon', 'oolong', 'White']
+>>>
+>>> tea_varieties[1:3]  
+['Lemon', 'oolong']
+>>> tea_varieties[1:3] = ["green", "Masala"] 
+>>> tea_varieties       
+['black', 'green', 'Masala', 'White'] replacing
+>>>
   -->
+  <!-- insert nothing
+  
+  >>> tea_varieties       
+['black', 'green', 'Masala', 'White']
+>>> tea_varieties
+['black', 'green', 'Masala', 'White']
+>>> tea_varieties[1:1]
+[]
+>>> tea_varieties[1:1] = ["test", "test"] 
+>>> tea_varieties      
+['black', 'test', 'test', 'green', 'Masala', 'White']
+>>> tea_varieties[1:2] 
+['test']
+>>> tea_varieties[1:3] 
+['test', 'test']
+>>> tea_varieties[1:3] = []
+>>> tea_varieties           
+['black', 'green', 'Masala', 'White']
+>>> -->
