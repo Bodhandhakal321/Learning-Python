@@ -381,3 +381,46 @@ black
 >>> tea_varieties           
 ['black', 'green', 'Masala', 'White']
 >>> -->
+<!-- basic loops and conditions and append method
+>>> tea_varieties           
+['black', 'green', 'Masala', 'White']
+>>> for tea  in tea_varieties:
+...     print(tea)
+...
+black
+green
+Masala
+White
+>>> for tea  in tea_varieties:
+...     print(tea, end="-") 
+...
+black-green-Masala-White->>>
+>>> tea_varieties
+['black', 'green', 'Masala', 'White']
+>>> if "OOlong" in tea_varieties:
+...     print("I have oolong tea")
+...
+>>> tea_varieties.append("OOlong")  //adding on list
+>>> tea_varietes
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'tea_varietes' is not defined. Did you mean: 'tea_varieties'?
+>>> tea_varieties                  
+['black', 'green', 'Masala', 'White', 'OOlong']
+>>> if "OOlong" in tea_varieties:  
+...     print("i have Oolong tea") 
+...
+i have Oolong tea
+>>> tea_varieties.pop()             
+'OOlong'
+>>> tea_varieties 
+>>> tea_varieties.remove("green")
+>>> tea_varieties
+['black', 'Masala', 'White']
+>>> tea_varieties
+['black', 'Masala', 'White']
+>>> tea_varieties.insert(1, "green")  //insert and delete learning
+>>> tea_varieties
+['black', 'green', 'Masala', 'White']
+>>>
+ -->
