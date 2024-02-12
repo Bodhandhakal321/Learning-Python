@@ -437,3 +437,13 @@ range(0, 10)
 [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 >>>
  -->
+ <!-- learning dictionaries
+ >>> chai_type =  {"Masala": "SPICY", "Ginger":"Zesty", "Green":"mild"}
+>>> chai_type 
+{'Masala': 'SPICY', 'Ginger': 'Zesty', 'Green': 'mild'}
+>>> chai_type["Masala"] 
+'SPICY'
+>>> chai_type.get("Ginger") 
+'Zesty'
+>>> chai_type.get("Gingery") 
+>>> -->
