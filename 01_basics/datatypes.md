@@ -455,4 +455,21 @@ Masala SPICY
 Ginger Zesty
 Green Fresh
 >>>
+>>> for key, value in chai_type.items():  
+...     print(key, value)
+...                                       
+...
+Masala SPICY
+Ginger Zesty
+Green Fresh
+>>> if "Masala" in chai_type:
+...     print("I have masala chai") 
+...
+I have masala chai
+>>> print(len(chai_type))
+3
+>>> chai_type
+{'Masala': 'SPICY', 'Ginger': 'Zesty', 'Green': 'Fresh'}
+>>>
+
  -->
