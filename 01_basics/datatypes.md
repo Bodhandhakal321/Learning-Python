@@ -471,5 +471,19 @@ I have masala chai
 >>> chai_type
 {'Masala': 'SPICY', 'Ginger': 'Zesty', 'Green': 'Fresh'}
 >>>
+>>> chai_type
+{'Masala': 'SPICY', 'Ginger': 'Zesty', 'Green': 'Fresh'}
+>>> chai_type["Earl Grey"] = "Citrus" 
+>>> chai_type
+{'Masala': 'SPICY', 'Ginger': 'Zesty', 'Green': 'Fresh', 'Earl Grey': 'Citrus'}
+>>> chai_type.pop("Ginger") 
+'Zesty'
+>>> chai_type
+{'Masala': 'SPICY', 'Green': 'Fresh', 'Earl Grey': 'Citrus'}
+>>> chai_type.popitem()    
+('Earl Grey', 'Citrus')
+>>> chai_type
+{'Masala': 'SPICY', 'Green': 'Fresh'}
+>>>
 
  -->
