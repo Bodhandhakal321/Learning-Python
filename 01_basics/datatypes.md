@@ -447,3 +447,12 @@ range(0, 10)
 'Zesty'
 >>> chai_type.get("Gingery") 
 >>> -->
+<!-- loops in chai_types
+>>> for chai in chai_type: 
+...     print(chai, chai_type[chai])
+...
+Masala SPICY
+Ginger Zesty
+Green Fresh
+>>>
+ -->
