@@ -485,5 +485,29 @@ I have masala chai
 >>> chai_type
 {'Masala': 'SPICY', 'Green': 'Fresh'}
 >>>
+<!-- creating dictionaries
+>>> tea_shop = { 
+... "chai":{"Masala" : "Spicy", "Ginger": "Zesty"},
+... "Tea" : {"Green": "Mild", "Black":"Strong"} 
+... }
+>>> tea_shop
+{'chai': {'Masala': 'Spicy', 'Ginger': 'Zesty'}, 'Tea': {'Green': 'Mild', 'Black': 'Strong'}}
+>>> prine(tea_shop) 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'prine' is not defined. Did you mean: 'print'?
+>>> print(tea_shop) 
+{'chai': {'Masala': 'Spicy', 'Ginger': 'Zesty'}, 'Tea': {'Green': 'Mild', 'Black': 'Strong'}}
+>>> 
+>>> print(tea_shop) 
+{'chai': {'Masala': 'Spicy', 'Ginger': 'Zesty'}, 'Tea': {'Green': 'Mild', 'Black': 'Strong'}}
+>>> tea_shop["chai"]
+{'Masala': 'Spicy', 'Ginger': 'Zesty'}
+>>> tea_shop["chai"]["Ginger"] 
+'Zesty'
+>>> squared_num = {x:x**2 for x in range(6)} 
+>>> squared_num
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+>>>-->
 
  -->
