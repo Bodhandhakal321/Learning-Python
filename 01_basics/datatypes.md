@@ -508,6 +508,14 @@ NameError: name 'prine' is not defined. Did you mean: 'print'?
 >>> squared_num = {x:x**2 for x in range(6)} 
 >>> squared_num
 {0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+>>> keys = ["Masala","Ginger","lemon"] 
+>>> keys
+['Masala', 'Ginger', 'lemon']
+>>> new_dict=  dict.fromkeys(keys, default_value) 
+>>> new_dict
+>>> new_dict= dict.fromkeys(keys, keys) 
+>>> new_dict
+{'Masala': ['Masala', 'Ginger', 'lemon'], 'Ginger': ['Masala', 'Ginger', 'lemon'], 'lemon': ['Masala', 'Ginger', 'lemon']}
+>>>
 >>>-->
-
  -->
