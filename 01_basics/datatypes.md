@@ -544,4 +544,9 @@ SyntaxError: expected ':'
 ...     print("I have green tea")
 ...
 I have green tea
+>>> tes_types
+('Black', 'Green', 'Oolong')
+>>> (black,green,oolong)= tes_types
+>>> black
+'Black'
 >>> -->
