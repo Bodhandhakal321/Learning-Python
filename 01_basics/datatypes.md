@@ -549,4 +549,8 @@ I have green tea
 >>> (black,green,oolong)= tes_types
 >>> black
 'Black'
+
+>>>
+>>> type(tes_types) 
+<class 'tuple'>
 >>> -->
