@@ -519,3 +519,29 @@ NameError: name 'prine' is not defined. Did you mean: 'print'?
 >>>
 >>>-->
  -->
+  <!-- SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> tes_types[0] = "LEMON" 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> len(tes_types)
+3
+>>> more_tea = ("Herbal", "earl grey") 
+>>> all_tea = more_tea + tes_types
+>>> all_tea
+('Herbal', 'earl grey', 'Black', 'Green', 'Oolong')
+>>> all_tea
+('Herbal', 'earl grey', 'Black', 'Green', 'Oolong')
+>>> if "Greeb" in all_tea
+  File "<stdin>", line 1
+    if "Greeb" in all_tea
+                         ^
+SyntaxError: expected ':'
+>>> if "Greeb" in all_tea:
+...     print("I have green tea") 
+...
+>>> if "Green" in all_tea:        
+...     print("I have green tea")
+...
+I have green tea
+>>> -->
