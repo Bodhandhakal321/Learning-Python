@@ -42,4 +42,28 @@ print(username)>>> -->
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
->>>-->
+>>>
+>>> listTwo = [1,2,3]
+>>> iter(listTwo) is listTwo 
+False
+>>>
+-->
+<!-- dictionaries are also iterable
+>>> D = {'a':1, 'b':2}
+>>> for key in D.keys():
+...     print(key)
+...  
+a
+b
+>>> I = iter(D)
+>>> I
+<dict_keyiterator object at 0x000001DD302C5EE0>
+>>> next(I)
+'a'
+>>>
+>>> next(I)
+'b'
+>>> next(I)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIterati -->
