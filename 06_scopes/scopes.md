@@ -10,4 +10,9 @@ PS D:\PythonLearning> python 06_scopes/01_scope.py
 chai aur code
 chai aur code
 PS D:\PythonLearning> 
+PS D:\PythonLearning> python 06_scopes/01_scope.py
+chai aur code
+chai aur code
+100
+PS D:\PythonLearning> 
  -->
