@@ -1,7 +1,10 @@
 class Car:
+    total_car = 0
+
     def __init__(self, brand, model):
         self.__brand = brand
         self.model = model
+        Car.total_car += 1
 
     def get_brand(self):
         return self.__brand + "!"
@@ -28,7 +31,10 @@ print(my_tesla.fuel_type())
 # print(my_tesla.full_name())
 
 safari = Car("Tata", "SAFARI")
+safariThree = Car("Tata", "Nexon")
 print(safari.fuel_type())
+
+print(Car.total_car)
 
 
 
@@ -49,4 +55,5 @@ print(safari.fuel_type())
 # __ means making private
 # encapsulation modifying car class the brand attribute to private 
 # setter for us
-# polymorphism by defining a method fuel_type in both car and electiccar 
+#  learning polymorphism by defining a method fuel_type in both car and electiccar 
+# class variable adding a class varibale which keeps track of the no of car created
