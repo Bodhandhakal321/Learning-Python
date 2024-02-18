@@ -3,17 +3,25 @@ class Car:
 
     def __init__(self, brand, model):
         self.__brand = brand
-        self.model = model
+        self.__model = model
         Car.total_car += 1
 
     def get_brand(self):
         return self.__brand + "!"
 
     def full_name(self):
-        return f"{self.__brand} {self.model}"
+        return f"{self.__brand} {self.__model}"
     
     def fuel_type(self):
         return "Petrol or Diesel"
+    
+    @staticmethod
+    def general_desc():
+        return "Cars are means of transport"
+    
+    @property
+    def model(self):
+        return self.__model
     
 
 class ElectricCar(Car):
@@ -27,14 +35,20 @@ class ElectricCar(Car):
 
 my_tesla = ElectricCar("Tesla", "Model S", "85KWH")
 # print(my_tesla.__brand)
-print(my_tesla.fuel_type())
+# print(my_tesla.fuel_type())
 # print(my_tesla.full_name())
 
 safari = Car("Tata", "SAFARI")
-safariThree = Car("Tata", "Nexon")
-print(safari.fuel_type())
+# safari.model = "city"
 
-print(Car.total_car)
+
+safariThree = Car("Tata", "Nexon")
+print(safari.model)
+
+# print(Car.total_car)
+
+# print(safari.general_desc())
+# print(Car.general_desc())
 
 
 
@@ -57,3 +71,6 @@ print(Car.total_car)
 # setter for us
 #  learning polymorphism by defining a method fuel_type in both car and electiccar 
 # class variable adding a class varibale which keeps track of the no of car created
+# adding a static method to the Car class that returns the description of car
+# @staticmethod is a decoraters
+# using property decorators in the Car class to make the model attribute read only leaned @proprty decorators
