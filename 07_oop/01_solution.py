@@ -31,11 +31,12 @@ class ElectricCar(Car):
 
     def fuel_type(self):
         return "Electric charge"
+    
 
 
-my_tesla = ElectricCar("Tesla", "Model S", "85KWH")
-print(isinstance(my_tesla, Car))
-print(isinstance(my_tesla, ElectricCar))
+# my_tesla = ElectricCar("Tesla", "Model S", "85KWH")
+# print(isinstance(my_tesla, Car))
+# print(isinstance(my_tesla, ElectricCar))
 
 # print(my_tesla.__brand)
 # print(my_tesla.fuel_type())
@@ -63,6 +64,22 @@ print(isinstance(my_tesla, ElectricCar))
 # my_new_car = Car("Tata","Safari")
 # print(my_new_car.brand)
 # print(my_new_car.model)
+    
+class Battery:
+    def battery_info(self):
+        return "this is battery"
+
+class Engine:
+    def engine_info(self):
+        return "this is engine"
+
+
+class ElectricCarTwo(Battery, Engine, Car):
+    pass
+
+my_new_tesla = ElectricCarTwo("Tesla", "Model X")
+print(my_new_tesla.engine_info())
+print(my_new_tesla.battery_info())
 
 
 # questions
@@ -78,3 +95,4 @@ print(isinstance(my_tesla, ElectricCar))
 # @staticmethod is a decoraters
 # using property decorators in the Car class to make the model attribute read only leaned @proprty decorators
 # use of isinstance() to check my_tesla is an instance of Car and ElectricCar
+#  multiple inheritance create two class battery and engine let ElectricCar inherit from both
