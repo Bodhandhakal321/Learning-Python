@@ -34,16 +34,19 @@ class ElectricCar(Car):
 
 
 my_tesla = ElectricCar("Tesla", "Model S", "85KWH")
+print(isinstance(my_tesla, Car))
+print(isinstance(my_tesla, ElectricCar))
+
 # print(my_tesla.__brand)
 # print(my_tesla.fuel_type())
 # print(my_tesla.full_name())
 
-safari = Car("Tata", "SAFARI")
+# safari = Car("Tata", "SAFARI")
 # safari.model = "city"
 
 
-safariThree = Car("Tata", "Nexon")
-print(safari.model)
+# safariThree = Car("Tata", "Nexon")
+# print(safari.model)
 
 # print(Car.total_car)
 
@@ -74,3 +77,4 @@ print(safari.model)
 # adding a static method to the Car class that returns the description of car
 # @staticmethod is a decoraters
 # using property decorators in the Car class to make the model attribute read only leaned @proprty decorators
+# use of isinstance() to check my_tesla is an instance of Car and ElectricCar
