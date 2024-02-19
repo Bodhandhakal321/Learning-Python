@@ -1,10 +1,35 @@
+import json
+
+
+def load_data():
+    try:
+        with open('youtube.txt', 'r') as file:
+            test = json.load(file)
+            # print(type(test))
+            return test
+    except FileNotFoundError:
+        return []
+    
+def save_data_helper(videos):
+    with open('youtube.txt' , 'w') as file:
+        json.dump(videos, file)
+
 
 
 def  list_all_videos(videos):
-    pass
+      print("\n")
+      print("*" *70)
+      for index, video in enumerate(videos , start=1):
+      
+        print(f"{index}.{video['name']}, Duration: {video['time']}")
+      print("\n")
+      print("*" *70)
 
 def add_video(videos):
-    pass
+    name= input("Enter Video name:")
+    time =input("Enter Video time")
+    videos.append({'name':name, 'time':time})
+    save_data_helper(videos)
 
 def update_video(videos):
     pass
@@ -17,10 +42,7 @@ def delete_video(videos):
 
 def main():
 
-    videos= []
-
-
-
+    videos= load_data()
     while True:
         print("\n Youtube Manager | Choose an option")
         print("1. List all youtube Videos")
@@ -29,6 +51,7 @@ def main():
         print("4. Delete a youtubr video ")
         print("5. Exit the app ")
         choice = input("Enter you choice")
+        print(videos)
 
         match choice:
             case '1':
