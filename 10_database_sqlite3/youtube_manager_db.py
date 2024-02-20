@@ -11,16 +11,20 @@ cursor.execute('''
 ''')
 
 def list_videos():
-    cursor.execute()
+    cursor.execute("SELECT * FROM videos")
+    for row in cursor.fetchall():
+        print(row)
 
-def add_video():
-    pass
+def add_video(name, time):
+    cursor.execute("INSERT INTO videos (name, time) VALUES (?,?)",(name), (time))
+    cursor.commit()
 
-def update_video():
-    pass
+def update_video(video_id, new_name, new_time):
+    cursor.execute("UPDATE videos SET name = ?, time = ? WHERE id = ?", (new_name), (new_time), (video_id))
+    cursor.commit()
 
-def delete_video():
-    pass
+def delete_video(video_id):
+    cursor.execute("DELETE FROM videos where id = ?",(video_id))
 
 
 def main():
