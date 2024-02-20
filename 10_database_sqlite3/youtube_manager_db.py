@@ -16,15 +16,16 @@ def list_videos():
         print(row)
 
 def add_video(name, time):
-    cursor.execute("INSERT INTO videos (name, time) VALUES (?,?)",(name), (time))
-    cursor.commit()
+    cursor.execute("INSERT INTO videos (name, time) VALUES (?, ?)",(name,time))
+    conn.commit()
 
 def update_video(video_id, new_name, new_time):
-    cursor.execute("UPDATE videos SET name = ?, time = ? WHERE id = ?", (new_name), (new_time), (video_id))
-    cursor.commit()
+    cursor.execute("UPDATE videos SET name = ?, time = ? WHERE id = ?", (new_name, new_time,video_id))
+    conn.commit()
 
 def delete_video(video_id):
-    cursor.execute("DELETE FROM videos where id = ?",(video_id))
+    cursor.execute("DELETE FROM videos where id = ?",(video_id,))
+    conn.commit()
 
 
 def main():
@@ -43,7 +44,7 @@ def main():
         elif choice == '2':
             name=  input("Enter the video name: ")
             time= input("Enter the video time: ")
-            add_video(name,time)
+            add_video(name, time)
         elif choice == '3':
             video_id =input("Enter video ID to Update: ")
             name=  input("Enter the video name: ")
