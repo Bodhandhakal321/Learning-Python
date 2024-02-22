@@ -1,8 +1,10 @@
 # import pymongo
 
 from pymongo import MongoClient
+from bson import ObjectId
 
-client = MongoClient("mongodb+srv://youtubepy:youtubepy@atlascluster.aiocvws.mongodb.net/ytmanager")
+client = MongoClient("mongodb+srv://youtubepy:youtubepy@atlascluster.aiocvws.mongodb.net/ytmanager",)
+# client = MongoClient("mongodb+srv://youtubepy:youtubepy@atlascluster.aiocvws.mongodb.net/", tlsAllowInvalidCertificates= True)
 
 # not a good idea to include id and pw in code files
 
@@ -12,17 +14,21 @@ video_collection = db["videos"]
 
 print(video_collection)
 
-def add_videos(name,video):
-    pass
+def add_videos(name,time):
+    video_collection.insert_one({"name": name,"time":time})
 
 def list_videos():
-    pass
+    for video in video_collection.find():
+        print(f"ID: {video['_id']}, Name:{video['name']} and Time: {video['time']}")
 
-def update_videos(video_id, name, time):
-    pass
+def update_videos(video_id, new_name, new_time):
+   video_collection.update_one(
+       {'_id': ObjectId( video_id)},
+       {"$set": {"name": new_name, "time": new_time}}
+       )
 
 def delete_video(video_id):
-    pass
+    video_collection.delete_one({"_id": video_id})
 
 def main():
     while True:
