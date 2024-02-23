@@ -3,8 +3,8 @@
 from pymongo import MongoClient
 from bson import ObjectId
 
-client = MongoClient("mongodb+srv://youtubepy:youtubepy@atlascluster.aiocvws.mongodb.net/ytmanager",)
-# client = MongoClient("mongodb+srv://youtubepy:youtubepy@atlascluster.aiocvws.mongodb.net/", tlsAllowInvalidCertificates= True)
+# client = MongoClient("mongodb+srv://CHAI:CHai@atlascluster.aiocvws.mongodb.net/ytmanager",)
+# client = MongoClient("mongodb+srv://CHai:Chai@atlascluster.aiocvws.mongodb.net/", tlsAllowInvalidCertificates= True)
 
 # not a good idea to include id and pw in code files
 
